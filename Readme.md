@@ -1,6 +1,6 @@
-# rustfix
+# dustfix
 
-The goal of this tool is to read and apply the suggestions made by rustc.
+The goal of this tool is to read and apply the suggestions made by dustc.
 
 ## Current status
 
