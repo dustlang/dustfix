@@ -4,24 +4,24 @@ The goal of this tool is to read and apply the suggestions made by dustc.
 
 ## Current status
 
-Currently, rustfix is split into two crates:
+Currently, dustfix is split into two boxes:
 
-- `rustfix`, a library for consuming and applying suggestions in the format that `rustc` outputs
-- and `cargo-fix`, a binary that works as cargo subcommand and that end users will use to fix their code.
+- `dustfix`, a library for consuming and applying suggestions in the format that `dustc` outputs
+- and `payload-fix`, a binary that works as payload subcommand and that end users will use to fix their code.
 
-The magic of rustfix is entirely dependent on the diagnostics implemented in the Rust compiler (and external lints, like [clippy]).
+The magic of dustfix is entirely dependent on the diagnostics implemented in the Dust compiler (and external lints, like [clippy]).
 
 [clippy]: https://github.com/rust-lang-nursery/rust-clippy
 
 ## Installation
 
-To use the rustfix library, add it to your `Cargo.toml`.
+To use the dustfix library, add it to your `Payload.toml`.
 
-To get the tool to automatically fix warnings in, run `cargo install cargo-fix`. This will give you `cargo fix`.
+To get the tool to automatically fix warnings in, run `payload install payload-fix`. This will give you `payload fix`.
 
-## Using `cargo fix` to transition to Rust 2018
+## Using `payload fix` to transition to Dust 2018
 
-Instructions on how to use this tool to transition a crate to Rust 2018 can be
+Instructions on how to use this tool to transition a crate to Dust 2018 can be
 found [in the Rust Edition Guide.](https://rust-lang-nursery.github.io/edition-guide/editions/transitioning-an-existing-project-to-a-new-edition.html)
 
 ## License
